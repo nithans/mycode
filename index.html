@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function light(sw) {
+          var pic;
+          if (sw == 0) {
+            pic = "images/pic_bulboff.gif"
+          } else {
+            pic = "images/pic_bulbon.gif"
+          }
+          document.getElementById('myImage').src = pic;
+        }
+        </script>
+        
+        <img id="myImage" src="images/pic_bulboff.gif" width="100" height="180">
+        
+        <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+        </p>
+
+
+
+
+<title>This is a test Page</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="Stylesheet" href="style.css">
+<style>
+
+
+</style>
+</head>
+<body >
+
+<p id="demo"></p>
+<img id="picture" src="" width="100" height="180">
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+document.getElementById("picture").src = "images/smiley.gif";
+</script> 
+
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+    <script>
+        function displayResult() {
+          document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+        </script>
+
+    <h1 id="myHeader">My Header</h1>
+
+
+    <button onclick="myFunction()">Hide elements</button>
+    <h2 class="note">London</h2>
+    <h2 class="city">Paris</h2>
+    <h2 class="city">Tokyo</h2>
+    <script>
+        function myFunction() {
+          var x = document.getElementsByClassName("city");
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+        }
+        </script>
+
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <p>This is some <span class="note">important</span> text.</p>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+      </div>
+    <div style="background-color:black;color:white;padding:30px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      </div>
+
+
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+<table>
+    <colgroup>
+        <col span="2" style="background-color: #D6EEEE">
+        <col span="1" style="background-color: pink">
+      </colgroup>
+    <caption>Monthly savings</caption>
+<tr>
+<th>Emp Code</th>
+<th>TM Name</th>
+<th>Position</th>
+</tr>
+<tr>
+<td>
+    1023
+</td>
+<td>
+    Somesh
+</td>
+<td>Manager</td>
+</tr>
+<tr>
+    <td>
+        4
+    </td>
+    <td>
+        Rakesh
+    </td>
+    <td>Agent</td>
+    </tr>
+
+
+
+</table>
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="images/taj.jpg">
+        <source media="(min-width: 465px)" srcset="images/smiley.gif">
+        <img src="images/taj.jpg">
+      </picture>
+
+    <p>
+        <img src="images/smiley.gif" alt="Smiley face" style="float:inline-start;width:42px;height:42px;">
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+        </p>
+        
+<a href="#C4">Jump to Chapter 4</a>
+
+
+<img src="images/taj.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="taj" href="https://www.tajmahal.gov.in/">
+ 
+</map>
+
+
+<a href="http://nithan.com">nithan</a>
+<a href="default.asp">
+<img src="images/taj.jpg" alt="taj" width="500" height="500">
+</a>
+
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+
+<h1 style="background-color: green;">You are a champion</h1>
+<h1 style="color:Tomato;">Hello World</h1>
+<h1 style="border:2px solid Violet;">This is awesome</h1>
+<p>my favourit color is <del>red</del><ins>blue
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<bdo dir="rtl">This text will be written from right to left</bdo>
+</ins></del> <sub>sub</sub></sub></p>
+
+<!--comment-->
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<p style="color: red;">This is a red color</p>
+<h1 style="color: rgb(22, 165, 22);"> This is a Green Rajya</h1>
+<strong>This is strong </strong>
+<i>This is italics</i>
+<em>ephesized</em>
+<h2 id="C4">Chapter 4</h2>
+<pre style="font-family:courier;">
+My bony lies over the sea.
+My bony lies over the sea.
+My bony lies over the sea.
+My bony lies over the sea.
+
+
+My bony lies over the sea.
+
+</pre>
+<p>do not forget to bring <mark>chocolate</mark>today.</p>
+
+</body>
+</html>
