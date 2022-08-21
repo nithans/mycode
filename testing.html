@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Static Template</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style>
+      
+      .row {
+        width: 100%;
+        background-color: red;
+        height: 1300px;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+
+    .green {
+      background-color: green;
+        height: 300px;
+    }
+      
+    .blue {
+      background-color: blue;
+        height: 300px;
+    }
+      
+    .yellow {
+      background-color: yellow;
+        height: 300px;
+}
+      
+    .black {
+      background-color: black;
+        height: 300px;
+    }
+    .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+</style>
+  <script>
+    var a=1; //defining a variable
+    function callme()
+    
+    {
+      let num1,num2,sum;
+  num1=document.getElementById("num1").value;
+  num2=document.getElementById("num2").value;
+ if(num1 == num2){
+
+  document.getElementById("result").innerHTML="Numbers are same";
+
+ }
+else
+{
+  document.getElementById("result").innerHTML="Numbers are not same";
+}
+
+
+  
+       //defining a function
+      console.log("Sum ="+sum);
+
+    }
+
+    function sub()
+    
+    {
+      let num1,num2,subtracts;
+  num1=document.getElementById("num1").value;
+  num2=document.getElementById("num2").value;
+  
+  subtracts=parseInt(num1)-parseInt(num2);
+  
+ 
+ document.getElementById("result").innerHTML=subtracts;
+
+      //defining a function
+      console.log("Subtracted ="+subtracts);
+
+    }
+    function mul()
+    
+    {
+      let num1,num2,multiplies;
+  num1=document.getElementById("num1").value;
+  num2=document.getElementById("num2").value;
+  
+  multiplies=parseInt(num1)*parseInt(num2);
+  
+ 
+
+ document.getElementById("result").innerHTML=multiplies;
+
+      //defining a function
+      console.log("Product ="+multiplies);
+
+    }
+    function dev()
+    
+    {
+      let num1,num2,devides;
+  num1=document.getElementById("num1").value;
+  num2=document.getElementById("num2").value;
+  
+  devides=parseInt(num1)/parseInt(num2);
+  
+ 
+ document.getElementById("result").innerHTML=devides;
+      //defining a function
+      console.log("Answer ="+devides);
+
+    }
+    function checkpass()
+    
+    {
+      let pwd,pwd1,macthes;
+  pwd=document.getElementById("pwd").value;
+  pwd1=document.getElementById("pwd1").value;
+  
+ if(pwd==pwd1){
+
+  document.getElementById("macthes").innerHTML="Password is Matching";
+  document.getElementById('macthes').style.color = 'green';
+ }
+  else
+  {
+
+document.getElementById("macthes").innerHTML="Password is Not Matching";
+document.getElementById('macthes').style.color = 'red';
+}
+ 
+
+
+    }
+</script>
+ 
+  </head>
+  <body>
+    <h1>hello</h1>
+    <div class="row">
+      <div class="col-2 green"></div>
+      <div class="col-3 blue"></div>
+      <div class="col-4 yellow"></div>
+      <div class="col-3 black"></div>
+
+      
+    </div>
+    <input type="text" id="num1">
+    <input type="text" id="num2" Onkeyup="callme()">
+ 
+    <span>result</span>
+    <p id="result"> </p>
+    <button onclick=" callme()">Calculate Sum</button><br>
+    <button onclick=" sub()">Subtract</button><br>
+    <button onclick=" mul()">Multiply</button><br>
+    <button onclick=" dev()">Devide</button><br>
+   
+    <input type="password" id="pwd" name="TyPe Password">
+    <input type="password" id="pwd1" name="Retype Password" onkeyup="checkpass()">
+    <p id="macthes"> </p>
+    </body>
+</html>
